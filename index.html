@@ -659,6 +659,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .form-check input{width:22px;height:22px;margin-top:2px;accent-color:#fff;flex-shrink:0;cursor:pointer}
 .form-check label{font-size:13px;line-height:1.6;font-weight:300;color:var(--g5);cursor:pointer}
 .form-check label a{color:var(--white);text-underline-offset:3px}
+.pv-upd{font-size:12px;color:var(--g5);margin:-12px 0 24px}
+.pv-sec{margin-bottom:22px}
+.pv-h{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1.5px;color:var(--white);margin-bottom:4px;font-weight:400}
+.pv-sec p{font-size:13px;line-height:1.75;font-weight:300;color:var(--g5)}
+.pv-sec a{color:var(--white);text-underline-offset:3px}
+.price-card-meta--alert{border-left:3px solid var(--g5);border-top:none;padding:8px 0 8px 12px;background:#101010}.price-card-meta--alert span{color:var(--g6);font-weight:500}
 /* ===== v2 additions ===== */
 .nav-right{display:flex;align-items:center;gap:28px}
 .social-sidebar{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:900;display:flex;flex-direction:column;background:var(--black);border:1px solid var(--g2);border-right:none}
@@ -995,7 +1001,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
       <div class="modal-cards">
         <div class="price-card price-card--highlight">
           <div class="price-card-name" data-pt="Diagnóstico de Mercado &amp; Marketing" data-en="Market &amp; Marketing Diagnosis">Diagnóstico de Mercado &amp; Marketing</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="2500">2.500</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1500">1.500</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Diagnóstico de marketing" data-en="Marketing diagnosis">Diagnóstico de marketing</li>
@@ -1026,7 +1032,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
       <div class="modal-cards">
         <div class="price-card">
           <div class="price-card-name" data-pt="Planejamento &amp; Setup de Mídia" data-en="Media Planning &amp; Setup">Planejamento &amp; Setup de Mídia</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1200">1.200</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1500">1.500</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Planejamento de mídia" data-en="Media planning">Planejamento de mídia</li>
@@ -1038,11 +1044,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
           </ul>
           <div class="price-card-meta"><strong data-pt="Plataformas" data-en="Platforms">Plataformas</strong><span data-pt="Google Ads, Meta Ads, TikTok Ads, X Ads, Pinterest Ads, Spotify Ads e OOH (Eletromidia)" data-en="Google Ads, Meta Ads, TikTok Ads, X Ads, Pinterest Ads, Spotify Ads and OOH (Eletromidia)">Google Ads, Meta Ads, TikTok Ads, X Ads, Pinterest Ads, Spotify Ads e OOH (Eletromidia)</span></div>
           <div class="price-card-meta"><strong data-pt="Formato" data-en="Format">Formato</strong><span data-pt="2 reuniões com o cliente + PDFs, planilhas e docs" data-en="2 client meetings + PDFs, spreadsheets and docs">2 reuniões com o cliente + PDFs, planilhas e docs</span></div>
-          <div class="price-card-meta"><strong data-pt="Atenção" data-en="Note">Atenção</strong><span data-pt="O valor varia conforme a quantidade de anúncios a configurar e o número de plataformas." data-en="Price varies with the number of ads to set up and the number of platforms.">O valor varia conforme a quantidade de anúncios a configurar e o número de plataformas.</span></div>
+          <div class="price-card-meta price-card-meta--alert"><strong data-pt="Atenção" data-en="Note">Atenção</strong><span data-pt="O valor varia conforme o número de plataformas." data-en="Price varies with the number of platforms.">O valor varia conforme o número de plataformas.</span></div>
         </div>
         <div class="price-card">
           <div class="price-card-name" data-pt="Gestão Mensal" data-en="Monthly Management">Gestão Mensal</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1800">1.800</span><span class="price-suffix" data-pt="/mês" data-en="/mo">/mês</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="500">500</span><span class="price-suffix" data-pt="/mês" data-en="/mo">/mês</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Monitoramento de KPIs" data-en="KPI monitoring">Monitoramento de KPIs</li>
@@ -1079,21 +1085,18 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
       <div class="modal-cards">
         <div class="price-card">
           <div class="price-card-name" data-pt="Estruturação de Indicadores &amp; Dashboard" data-en="Metrics Structuring &amp; Dashboard">Estruturação de Indicadores &amp; Dashboard</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1800">1.800</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="550">550</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Estruturação de indicadores" data-en="Metrics structuring">Estruturação de indicadores</li>
             <li data-pt="Definição de KPIs" data-en="KPI definition">Definição de KPIs</li>
-            <li data-pt="Organização de bases de dados" data-en="Database organization">Organização de bases de dados</li>
-            <li data-pt="Tratamento de dados" data-en="Data cleaning &amp; treatment">Tratamento de dados</li>
-            <li data-pt="Análise estatística de apoio (desvio padrão, correlações)" data-en="Supporting statistical analysis (standard deviation, correlations)">Análise estatística de apoio (desvio padrão, correlações)</li>
             <li data-pt="Criação de dashboard" data-en="Dashboard creation">Criação de dashboard</li>
           </ul>
           <div class="price-card-meta"><strong data-pt="Ferramentas" data-en="Tools">Ferramentas</strong><span data-pt="Google Sheets, Excel, Looker Studio, GitHub, Vercel, VS Code e Google Colab" data-en="Google Sheets, Excel, Looker Studio, GitHub, Vercel, VS Code and Google Colab">Google Sheets, Excel, Looker Studio, GitHub, Vercel, VS Code e Google Colab</span></div>
         </div>
         <div class="price-card">
           <div class="price-card-name" data-pt="Gestão &amp; Monitoramento de Dados" data-en="Data Management &amp; Monitoring">Gestão &amp; Monitoramento de Dados</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1800">1.800</span><span class="price-suffix" data-pt="/mês" data-en="/mo">/mês</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1000">1.000</span><span class="price-suffix" data-pt="/mês" data-en="/mo">/mês</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Monitoramento da base de dados" data-en="Database monitoring">Monitoramento da base de dados</li>
@@ -1104,10 +1107,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
         </div>
         <div class="price-card">
           <div class="price-card-name" data-pt="Data Analytics &amp; Storytelling" data-en="Data Analytics &amp; Storytelling">Data Analytics &amp; Storytelling</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="3000">3.000</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="2000">2.000</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="ETL dos dados" data-en="Data ETL">ETL dos dados</li>
+            <li data-pt="Organização de bases de dados" data-en="Database organization">Organização de bases de dados</li>
+            <li data-pt="Tratamento de dados" data-en="Data cleaning &amp; treatment">Tratamento de dados</li>
+            <li data-pt="Análise estatística de apoio (desvio padrão, correlações)" data-en="Supporting statistical analysis (standard deviation, correlations)">Análise estatística de apoio (desvio padrão, correlações)</li>
             <li data-pt="Análise de performance" data-en="Performance analysis">Análise de performance</li>
             <li data-pt="Análise de tendências" data-en="Trend analysis">Análise de tendências</li>
             <li data-pt="Projeções" data-en="Forecasting">Projeções</li>
@@ -1159,7 +1165,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
         </div>
         <div class="price-card">
           <div class="price-card-name" data-pt="Projetos Únicos &amp; Soluções Sob Medida" data-en="One-off Projects &amp; Custom Solutions">Projetos Únicos &amp; Soluções Sob Medida</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="2500">2.500</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="2000">2.000</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Ferramentas sob medida para o dia a dia e o fluxo de trabalho da empresa ou marca" data-en="Custom tools for the daily routine and workflow of a company or brand">Ferramentas sob medida para o dia a dia e o fluxo de trabalho da empresa ou marca</li>
@@ -1182,29 +1188,28 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
       <div class="modal-cards">
         <div class="price-card">
           <div class="price-card-name" data-pt="Starter" data-en="Starter">Starter</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1200">1.200</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="550">550</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Logo essencial" data-en="Essential logo">Logo essencial</li>
             <li data-pt="Identidade visual básica" data-en="Basic visual identity">Identidade visual básica</li>
-            <li data-pt="1 landing page" data-en="1 landing page">1 landing page</li>
             <li data-pt="1 rodada de ajustes" data-en="1 round of revisions">1 rodada de ajustes</li>
           </ul>
         </div>
         <div class="price-card">
           <div class="price-card-name" data-pt="Pro" data-en="Pro">Pro</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="2800">2.800</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="1500">1.500</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Identidade visual completa" data-en="Complete visual identity">Identidade visual completa</li>
             <li data-pt="Direcionamento estratégico de marca" data-en="Strategic brand direction">Direcionamento estratégico de marca</li>
-            <li data-pt="Site multi-página" data-en="Multi-page website">Site multi-página</li>
+            <li data-pt="LP única ou site multi-página" data-en="Single landing page or multi-page website">LP única ou site multi-página</li>
             <li data-pt="Aplicações de marca" data-en="Brand applications">Aplicações de marca</li>
           </ul>
         </div>
         <div class="price-card price-card--highlight">
           <div class="price-card-name" data-pt="Premium" data-en="Premium">Premium</div>
-          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="5000">5.000</span></div>
+          <div class="price-card-price"><span class="price-from" data-pt="a partir de" data-en="from">a partir de</span> <span class="price-currency">R$</span> <span class="price-value" data-brl="2800">2.800</span></div>
           <div class="price-card-divider"></div>
           <ul class="price-card-list">
             <li data-pt="Branding estratégico profundo" data-en="Deep strategic branding">Branding estratégico profundo</li>
@@ -1234,7 +1239,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
       <div class="form-field full"><label class="form-label" for="f-servico" data-pt="Qual serviço você procura?" data-en="Which service are you looking for?">Qual serviço você procura?</label><select class="form-select" aria-required="true" id="f-servico"><option value="" data-pt="Selecione um serviço…" data-en="Select a service…">Selecione um serviço…</option><option value="Marketing Intelligence Analyst">Marketing Intelligence Analyst</option><option value="Digital Media &amp; Paid Campaigns">Digital Media &amp; Paid Campaigns</option><option value="Marketing BI &amp; Data Analytics">Marketing BI &amp; Data Analytics</option><option value="Creative Intelligence &amp; Innovation">Creative Intelligence &amp; Innovation</option><option value="Logo, Rebranding &amp; Web Design">Logo, Rebranding &amp; Web Design</option><option value="Outros" data-pt="Outros / Não sei ainda" data-en="Other / Not sure yet">Outros / Não sei ainda</option></select><span class="form-error" role="alert" id="err-servico" data-pt="Selecione uma opção" data-en="Select an option">Selecione uma opção</span></div>
       <div class="form-field full"><label class="form-label" for="f-pacote" data-pt="Qual pacote te interessa?" data-en="Which package interests you?">Qual pacote te interessa?</label><select class="form-select" aria-required="true" id="f-pacote"><option value="" data-pt="Selecione um pacote…" data-en="Select a package…">Selecione um pacote…</option><optgroup label="Marketing Intelligence Analyst" data-pt="Marketing Intelligence Analyst" data-en="Marketing Intelligence Analyst"><option value="Diagnóstico de Mercado &amp; Marketing" data-pt="Diagnóstico de Mercado &amp; Marketing" data-en="Market &amp; Marketing Diagnosis">Diagnóstico de Mercado &amp; Marketing</option></optgroup><optgroup label="Digital Media &amp; Paid Campaigns" data-pt="Digital Media &amp; Paid Campaigns" data-en="Digital Media &amp; Paid Campaigns"><option value="Planejamento &amp; Setup de Mídia" data-pt="Planejamento &amp; Setup de Mídia" data-en="Media Planning &amp; Setup">Planejamento &amp; Setup de Mídia</option><option value="Gestão Mensal" data-pt="Gestão Mensal" data-en="Monthly Management">Gestão Mensal</option><option value="Análise de Performance da Campanha" data-pt="Análise de Performance da Campanha" data-en="Campaign Performance Analysis">Análise de Performance da Campanha</option></optgroup><optgroup label="Marketing BI &amp; Data Analytics" data-pt="Marketing BI &amp; Data Analytics" data-en="Marketing BI &amp; Data Analytics"><option value="Estruturação de Indicadores &amp; Dashboard" data-pt="Estruturação de Indicadores &amp; Dashboard" data-en="Metrics Structuring &amp; Dashboard">Estruturação de Indicadores &amp; Dashboard</option><option value="Gestão &amp; Monitoramento de Dados" data-pt="Gestão &amp; Monitoramento de Dados" data-en="Data Management &amp; Monitoring">Gestão &amp; Monitoramento de Dados</option><option value="Data Analytics &amp; Storytelling">Data Analytics &amp; Storytelling</option></optgroup><optgroup label="Creative Intelligence &amp; Innovation" data-pt="Creative Intelligence &amp; Innovation" data-en="Creative Intelligence &amp; Innovation"><option value="Creative Intelligence &amp; Innovation">Creative Intelligence &amp; Innovation</option><option value="Construção de Agentes de IA" data-pt="Construção de Agentes de IA" data-en="AI Agent Building">Construção de Agentes de IA</option><option value="Projetos Únicos &amp; Soluções Sob Medida" data-pt="Projetos Únicos &amp; Soluções Sob Medida" data-en="One-off Projects &amp; Custom Solutions">Projetos Únicos &amp; Soluções Sob Medida</option></optgroup><optgroup label="Logo, Rebranding &amp; Web Design" data-pt="Logo, Rebranding &amp; Web Design" data-en="Logo, Rebranding &amp; Web Design"><option value="Starter">Starter</option><option value="Pro">Pro</option><option value="Premium">Premium</option></optgroup><option value="Ainda não sei / quero uma recomendação" data-pt="Ainda não sei / quero uma recomendação" data-en="Not sure yet / want a recommendation">Ainda não sei / quero uma recomendação</option></select><span class="form-error" role="alert" id="err-pacote" data-pt="Selecione uma opção" data-en="Select an option">Selecione uma opção</span></div>
       <div class="form-field full"><label class="form-label" for="f-msg" data-pt="Mensagem" data-en="Message">Mensagem</label><textarea class="form-textarea" aria-required="true" id="f-msg" placeholder="Conte-me sobre o seu projeto, objetivos e qualquer detalhe que considere relevante…" data-pt-placeholder="Conte-me sobre o seu projeto, objetivos e qualquer detalhe que considere relevante…" data-en-placeholder="Tell me about your project, goals and any detail you consider relevant…"></textarea><span class="form-error" role="alert" id="err-msg" data-pt="Campo obrigatório" data-en="Required field">Campo obrigatório</span></div>
-    <div class="form-field full form-check-wrap"><div class="form-check"><input type="checkbox" id="f-priv" aria-required="true"/><label for="f-priv" data-html="1" data-pt="Li e concordo com a &lt;a href=&quot;privacidade.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Política de Privacidade&lt;/a&gt;." data-en="I have read and agree to the &lt;a href=&quot;privacidade.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Privacy Policy&lt;/a&gt;.">Li e concordo com a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</label></div><span class="form-error" role="alert" id="err-priv" role="alert" data-pt="Você precisa concordar para enviar a mensagem." data-en="You must agree to send the message.">Você precisa concordar para enviar a mensagem.</span></div></div>
+    <div class="form-field full form-check-wrap"><div class="form-check"><input type="checkbox" id="f-priv" aria-required="true"/><label for="f-priv" data-html="1" data-pt="Li e concordo com a &lt;a href=&quot;#privacidade&quot; data-open-modal=&quot;modal-privacidade&quot;&gt;Política de Privacidade&lt;/a&gt;." data-en="I have read and agree to the &lt;a href=&quot;#privacidade&quot; data-open-modal=&quot;modal-privacidade&quot;&gt;Privacy Policy&lt;/a&gt;.">Li e concordo com a <a href="#privacidade" data-open-modal="modal-privacidade">Política de Privacidade</a>.</label></div><span class="form-error" role="alert" id="err-priv" role="alert" data-pt="Você precisa concordar para enviar a mensagem." data-en="You must agree to send the message.">Você precisa concordar para enviar a mensagem.</span></div></div>
     <button type="submit" class="form-btn" id="form-submit-btn"><span id="btn-text" data-pt="Enviar Mensagem" data-en="Send Message">Enviar Mensagem</span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg></button>
   </form>
   <div class="form-success" id="formSuccess">
@@ -1267,8 +1272,24 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
   <img alt="Maria Fernanda Pereira — Marketing Intelligence Analyst" src="assets/img/brand/logo-mfp.jpg"/>
   <p data-pt="© 2026 Maria Fernanda Pereira. Todos os direitos reservados." data-en="© 2026 Maria Fernanda Pereira. All rights reserved.">© 2026 Maria Fernanda Pereira. Todos os direitos reservados.</p>
   <p>MARKETING &amp; DATA</p>
-  <a class="foot-link" href="privacidade.html" data-pt="Política de Privacidade" data-en="Privacy Policy">Política de Privacidade</a>
+  <a class="foot-link" href="#privacidade" data-open-modal="modal-privacidade" data-pt="Política de Privacidade" data-en="Privacy Policy">Política de Privacidade</a>
 </footer>
+
+  <div class="modal-overlay" id="modal-privacidade" role="dialog" aria-modal="true" aria-label="Política de Privacidade">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Fechar">&times;</button>
+      <h3 class="modal-title" data-pt="Política de Privacidade" data-en="Privacy Policy">Política de Privacidade</h3>
+      <p class="pv-upd" data-pt="Última atualização: 24/10/2026" data-en="Last updated: October 24, 2026">Última atualização: 24/10/2026</p>
+      <div class="pv-sec"><h4 class="pv-h" data-pt="1. Quem é a responsável" data-en="1. Who is responsible">1. Quem é a responsável</h4><p data-html="1" data-pt="Esta política explica como o site de &lt;strong&gt;Maria Fernanda Pereira&lt;/strong&gt; (“eu”) trata dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD – Lei 13.709/2018). Controladora dos dados: Maria Fernanda Pereira — contato: &lt;a href=&quot;mailto:mafe.f.pereira@gmail.com&quot;&gt;mafe.f.pereira@gmail.com&lt;/a&gt;." data-en="This policy explains how the website of &lt;strong&gt;Maria Fernanda Pereira&lt;/strong&gt; (“I”) handles personal data, in line with Brazil’s General Data Protection Law (LGPD – Law 13,709/2018). Data controller: Maria Fernanda Pereira — contact: &lt;a href=&quot;mailto:mafe.f.pereira@gmail.com&quot;&gt;mafe.f.pereira@gmail.com&lt;/a&gt;.">Esta política explica como o site de <strong>Maria Fernanda Pereira</strong> (“eu”) trata dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD – Lei 13.709/2018). Controladora dos dados: Maria Fernanda Pereira — contato: <a href="mailto:mafe.f.pereira@gmail.com">mafe.f.pereira@gmail.com</a>.</p></div>
+      <div class="pv-sec"><h4 class="pv-h" data-pt="2. Quais dados são tratados" data-en="2. What data is processed">2. Quais dados são tratados</h4><p data-html="1" data-pt="&lt;strong&gt;Formulário de contato:&lt;/strong&gt; nome, sobrenome, e-mail, telefone, serviço e pacote de interesse e a mensagem que você escrever. O formulário abre o seu aplicativo de e-mail com a mensagem pronta; o site não armazena esses dados em servidor próprio. &lt;strong&gt;Preferência de idioma:&lt;/strong&gt; guardada no seu próprio navegador (armazenamento local) apenas para lembrar PT ou EN; não é usada para rastreamento." data-en="&lt;strong&gt;Contact form:&lt;/strong&gt; first name, last name, e-mail, phone, service and package of interest, and the message you write. The form opens your e-mail app with the message ready; the site does not store this data on its own server. &lt;strong&gt;Language preference:&lt;/strong&gt; saved in your own browser (local storage) only to remember PT or EN; it is not used for tracking."><strong>Formulário de contato:</strong> nome, sobrenome, e-mail, telefone, serviço e pacote de interesse e a mensagem que você escrever. O formulário abre o seu aplicativo de e-mail com a mensagem pronta; o site não armazena esses dados em servidor próprio. <strong>Preferência de idioma:</strong> guardada no seu próprio navegador (armazenamento local) apenas para lembrar PT ou EN; não é usada para rastreamento.</p></div>
+      <div class="pv-sec"><h4 class="pv-h" data-pt="3. Para que uso os dados e base legal" data-en="3. Purpose and legal basis">3. Para que uso os dados e base legal</h4><p data-html="1" data-pt="Uso os dados para responder ao seu contato, elaborar orçamentos e conduzir a contratação de serviços. Base legal: procedimentos preliminares relacionados a contrato a pedido do titular e, quando aplicável, consentimento (LGPD, art. 7º)." data-en="I use the data to reply to your message, prepare quotes and manage the contracting of services. Legal basis: preliminary procedures related to a contract at the data subject’s request and, where applicable, consent (LGPD, art. 7).">Uso os dados para responder ao seu contato, elaborar orçamentos e conduzir a contratação de serviços. Base legal: procedimentos preliminares relacionados a contrato a pedido do titular e, quando aplicável, consentimento (LGPD, art. 7º).</p></div>
+      <div class="pv-sec"><h4 class="pv-h" data-pt="4. Cookies e serviços de terceiros" data-en="4. Cookies and third-party services">4. Cookies e serviços de terceiros</h4><p data-html="1" data-pt="Este site não usa cookies de publicidade nem de rastreamento. As fontes (Google Fonts) são carregadas dos servidores do Google, que podem registrar seu endereço IP. Links para LinkedIn, Instagram e outros sites seguem as políticas próprias de cada plataforma. Se eu passar a usar ferramentas de medição (como Google Search Console ou Analytics), esta política será atualizada e, quando necessário, será pedido o seu consentimento." data-en="This site does not use advertising or tracking cookies. Fonts (Google Fonts) are loaded from Google’s servers, which may log your IP address. Links to LinkedIn, Instagram and other sites follow each platform’s own policies. If I start using measurement tools (such as Google Search Console or Analytics), this policy will be updated and, where required, your consent will be requested.">Este site não usa cookies de publicidade nem de rastreamento. As fontes (Google Fonts) são carregadas dos servidores do Google, que podem registrar seu endereço IP. Links para LinkedIn, Instagram e outros sites seguem as políticas próprias de cada plataforma. Se eu passar a usar ferramentas de medição (como Google Search Console ou Analytics), esta política será atualizada e, quando necessário, será pedido o seu consentimento.</p></div>
+      <div class="pv-sec"><h4 class="pv-h" data-pt="5. Compartilhamento" data-en="5. Sharing">5. Compartilhamento</h4><p data-html="1" data-pt="Não vendo nem alugo seus dados. Eles podem passar por provedores de e-mail e de hospedagem do site, apenas na medida necessária para o funcionamento do serviço." data-en="I do not sell or rent your data. It may pass through e-mail and website hosting providers, only as needed for the service to work.">Não vendo nem alugo seus dados. Eles podem passar por provedores de e-mail e de hospedagem do site, apenas na medida necessária para o funcionamento do serviço.</p></div>
+      <div class="pv-sec"><h4 class="pv-h" data-pt="6. Por quanto tempo guardo" data-en="6. Retention">6. Por quanto tempo guardo</h4><p data-html="1" data-pt="Mantenho as mensagens pelo tempo necessário para atender sua solicitação e cumprir obrigações legais ou contratuais. Depois disso, os dados são eliminados." data-en="I keep messages for as long as needed to handle your request and meet legal or contractual obligations. After that, the data is deleted.">Mantenho as mensagens pelo tempo necessário para atender sua solicitação e cumprir obrigações legais ou contratuais. Depois disso, os dados são eliminados.</p></div>
+      <div class="pv-sec"><h4 class="pv-h" data-pt="7. Seus direitos" data-en="7. Your rights">7. Seus direitos</h4><p data-html="1" data-pt="Pela LGPD (art. 18) você pode solicitar: confirmação do tratamento, acesso, correção, anonimização ou eliminação, portabilidade, informação sobre compartilhamento e revogação do consentimento. Para exercer qualquer direito, escreva para &lt;a href=&quot;mailto:mafe.f.pereira@gmail.com&quot;&gt;mafe.f.pereira@gmail.com&lt;/a&gt;. Se você estiver fora do Brasil (por exemplo, nos EUA ou na Europa), também respondo a pedidos equivalentes sob as leis locais aplicáveis." data-en="Under the LGPD (art. 18) you may request: confirmation of processing, access, correction, anonymization or deletion, portability, information about sharing, and withdrawal of consent. To exercise any right, write to &lt;a href=&quot;mailto:mafe.f.pereira@gmail.com&quot;&gt;mafe.f.pereira@gmail.com&lt;/a&gt;. If you are outside Brazil (for example in the US or Europe), I also handle equivalent requests under the applicable local laws.">Pela LGPD (art. 18) você pode solicitar: confirmação do tratamento, acesso, correção, anonimização ou eliminação, portabilidade, informação sobre compartilhamento e revogação do consentimento. Para exercer qualquer direito, escreva para <a href="mailto:mafe.f.pereira@gmail.com">mafe.f.pereira@gmail.com</a>. Se você estiver fora do Brasil (por exemplo, nos EUA ou na Europa), também respondo a pedidos equivalentes sob as leis locais aplicáveis.</p></div>
+      <div class="pv-sec"><h4 class="pv-h" data-pt="8. Segurança e alterações" data-en="8. Security and changes">8. Segurança e alterações</h4><p data-html="1" data-pt="Adoto medidas razoáveis para proteger os dados, como conexão segura (HTTPS) e coleta apenas do necessário. Esta política pode ser atualizada; a data da última atualização aparece abaixo." data-en="I take reasonable measures to protect data, such as secure connection (HTTPS) and collecting only what is needed. This policy may be updated; the date of the last update appears below.">Adoto medidas razoáveis para proteger os dados, como conexão segura (HTTPS) e coleta apenas do necessário. Esta política pode ser atualizada; a data da última atualização aparece abaixo.</p></div>
+    </div>
+  </div>
 
 <script>
 
@@ -1362,6 +1383,9 @@ function setLang(lang){
     else if(!ev.shiftKey&&document.activeElement===last){ ev.preventDefault(); first.focus(); }
   });
   document.querySelectorAll('.svc-subbtn').forEach(function(b){ b.addEventListener('click',function(){ openM(document.getElementById(b.dataset.modal)); }); });
+  document.querySelectorAll('[data-open-modal]').forEach(function(a){ a.addEventListener('click',function(ev){ ev.preventDefault(); openM(document.getElementById(a.getAttribute('data-open-modal'))); }); });
+  function fromHash(){ if(window.location.hash==='#privacidade'){ openM(document.getElementById('modal-privacidade')); } }
+  window.addEventListener('hashchange',fromHash); fromHash();
   document.querySelectorAll('.modal-overlay').forEach(function(o){
     o.addEventListener('click',function(ev){ if(ev.target===o) closeM(o); });
     var x=o.querySelector('.modal-close'); if(x) x.addEventListener('click',function(){ closeM(o); });
