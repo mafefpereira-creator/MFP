@@ -512,6 +512,73 @@ section{padding:100px 60px}
 
 /* PROJETOS */
 #resultados{background:var(--white)}
+.board{background:#000;color:#fff;padding:22px 26px;margin-bottom:24px;border:1px solid #222}
+.board-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid #2a2a2a;margin-bottom:0}
+.board-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:4px;color:#fff}
+.board-live{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:2.5px;color:#999}
+.board-dot{width:8px;height:8px;border-radius:50%;background:#fff;display:inline-block;animation:boardblink 1.6s infinite}
+@keyframes boardblink{0%,60%{opacity:1}80%,100%{opacity:.2}}
+.flap-group{font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:4px;color:#777;padding:22px 0 6px;border-bottom:1px solid #2a2a2a}
+.flap-text{display:flex;flex-direction:column;gap:5px;min-width:0}
+.flap-sub{font-size:11px;line-height:1.5;color:#777;font-weight:300;letter-spacing:.3px;max-width:430px}
+.flap-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #1c1c1c}
+.flap-row:last-child{border-bottom:0}
+.flap-label{font-size:11px;font-weight:700;letter-spacing:3px;color:#999;text-transform:uppercase}
+.flap-val{display:flex;gap:3px;flex-wrap:nowrap;justify-content:flex-end}
+.flap{display:inline-flex;align-items:center;justify-content:center;width:30px;height:46px;background:#161616;border-radius:4px;font-family:'Bebas Neue',sans-serif;font-size:34px;line-height:1;color:#fff;position:relative;box-shadow:inset 0 -1px 0 #000}
+.flap::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:#000;opacity:.9}
+.flap.sep{width:14px;background:transparent;box-shadow:none}
+.flap.sep::after{display:none}
+.flap.sp{width:12px;background:transparent;box-shadow:none}
+.flap.sp::after{display:none}
+.flap.flip{animation:flapflip .09s linear}
+@keyframes flapflip{0%{transform:scaleY(1)}50%{transform:scaleY(.15)}100%{transform:scaleY(1)}}
+.board-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.board-tab{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:2.2px;text-transform:uppercase;padding:9px 14px;border:1px solid #444;background:#000;color:#999;cursor:pointer}
+.board-tab:hover{color:#fff;border-color:#fff}
+.board-tab.active{background:#fff;color:#000;border-color:#fff}
+.board-tab:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.board-toggle{display:inline-block;margin-top:18px;background:transparent;border:1px solid #fff;color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:2.5px;padding:11px 18px;cursor:pointer}
+.board-toggle:hover{background:#fff;color:#000}
+.board-toggle:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.board-toggle .tg-close{display:none}
+.board-toggle[aria-expanded="true"] .tg-open{display:none}
+.board-toggle[aria-expanded="true"] .tg-close{display:inline}
+.board-more{margin-top:8px;border-top:1px solid #2a2a2a}
+.board .rchart{background:transparent;border:0;padding:22px 0 0;margin:0}
+.board .rchart-tab{border-color:#fff;background:#000;color:#fff}
+.board .rchart-tab.active,.board .rchart-tab:hover{background:#fff;color:#000}
+.board .rchart-title{color:#fff}
+.board .rchart-plot{border-bottom-color:#444}
+.board .rbar-fill{background:#fff}
+.board .rbar.alt .rbar-fill{background:#666}
+.board .rbar:hover .rbar-fill,.board .rbar.on .rbar-fill{background:#bbb}
+.board .rbar-val{color:#fff}
+.board .rbar-name{color:#999}
+.board .rbar-name.rbar-gname{color:#fff}
+.board .rchart-read{color:#ddd}
+.board .rchart-src{color:#777}
+.board-note{font-size:11px;line-height:1.6;color:#777;margin:14px 0 0}
+.res-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.rchart{border:1px solid #d9d9d9;padding:26px 28px;margin-bottom:28px;background:#fff}
+.rchart-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.rchart-tab{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:9px 16px;border:1px solid #000;background:#fff;color:#000;cursor:pointer}
+.rchart-tab.active,.rchart-tab:hover{background:#000;color:#fff}
+.rchart-tab:focus-visible{outline:2px solid #000;outline-offset:2px}
+.rchart-title{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:1px;color:#000;margin:0 0 14px}
+.rchart-plot{display:flex;align-items:flex-end;justify-content:center;gap:90px;height:240px;border-bottom:1px solid #000;padding:0 10px;margin-bottom:34px;position:relative}
+.rbar-g{display:flex;align-items:flex-end;gap:14px;height:100%;position:relative}
+.rbar{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;width:90px;position:relative;cursor:pointer;background:transparent;border:0;padding:0;font:inherit}
+.rbar-fill{width:100%;background:#000;height:0;transition:height .7s cubic-bezier(.2,.8,.2,1),background .2s}
+.rbar.alt .rbar-fill{background:#999}
+.rbar:hover .rbar-fill,.rbar:focus-visible .rbar-fill,.rbar.on .rbar-fill{background:#444}
+.rbar:focus-visible{outline:2px solid #000;outline-offset:3px}
+.rbar-val{font-family:'Bebas Neue',sans-serif;font-size:24px;color:#000;margin-bottom:6px;letter-spacing:1px}
+.rbar-name{position:absolute;top:100%;margin-top:8px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#444;text-align:center;width:120px;left:50%;margin-left:-60px;line-height:1.4}
+.rchart-read{font-size:14px;line-height:1.6;color:#111;font-weight:400;margin:0 0 10px;min-height:44px}
+.rchart-src{font-size:11px;line-height:1.6;color:#666;margin:0}
+@media(prefers-reduced-motion:reduce){.rbar-fill{transition:none}.flap.flip{animation:none}.board-dot{animation:none}}
+@media(max-width:640px){.board{padding:20px 16px}.flap-row{flex-direction:column;align-items:flex-start;gap:8px}.flap-val{justify-content:flex-start;flex-wrap:wrap}.flap{width:26px;height:42px;font-size:30px}.flap.sep{width:12px}.rchart{padding:20px 14px}.rchart-plot{gap:16px;height:210px}.rbar{width:54px}.rbar-name{width:96px;margin-left:-48px;font-size:9px}.rbar-val{font-size:20px}}
 .res-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:28px}
 .res-stat{border:1px solid #d9d9d9;padding:30px 28px;background:#fff}
 .res-num{font-family:'Bebas Neue',sans-serif;font-size:64px;line-height:1;letter-spacing:1px;color:#000}
@@ -599,8 +666,18 @@ section{padding:100px 60px}
 /* FOOTER */
 footer{
   background:var(--black);border-top:1px solid var(--g2);
-  padding:24px 60px;display:flex;align-items:center;justify-content:space-between;
+  padding:36px 60px 24px;display:flex;flex-direction:column;gap:28px;
 }
+.foot-top{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.foot-contact{list-style:none;display:flex;gap:36px;flex-wrap:wrap;margin:0;padding:0}
+.foot-contact li{display:flex;flex-direction:column;gap:5px}
+.foot-k{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--g4)}
+.foot-contact a,.foot-soon{font-size:13px;color:var(--g6);letter-spacing:.3px;text-decoration:none}
+.foot-contact a:hover{color:var(--white);text-decoration:underline;text-underline-offset:3px}
+.foot-soon{color:var(--g5);font-style:italic}
+.foot-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--g2)}
+@media(max-width:860px){footer{padding:30px 24px 22px}.foot-contact{gap:22px}}
+@media(max-width:480px){.foot-contact{flex-direction:column;gap:16px}.foot-bottom{flex-direction:column;align-items:flex-start}}
 footer img{height:26px;opacity:.4}
 footer p{font-size:11px;color:var(--g3);letter-spacing:1px}
 
@@ -833,8 +910,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
     </a><a href="https://www.instagram.com/mfp.intelligence/" target="_blank" rel="noopener" class="side-link" title="Instagram">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-    </a><a href="https://wa.me/55" target="_blank" rel="noopener" class="side-link" title="WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
     </a></aside>
 
 <main id="main">
@@ -927,9 +1002,26 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
   <p class="sec-label reveal" data-pt="Resultados" data-en="Results">Resultados</p>
   <h2 class="sec-title reveal" data-pt="RESULTADOS EM NÚMEROS" data-en="RESULTS IN NUMBERS">RESULTADOS EM NÚMEROS</h2>
   <p class="pricing-intro reveal" data-pt="Indicadores reais de campanhas que conduzo, sempre com contexto e sem expor os clientes." data-en="Real indicators from campaigns I run, always with context and without exposing clients.">Indicadores reais de campanhas que conduzo, sempre com contexto e sem expor os clientes.</p>
-  <div class="res-grid"><div class="res-stat reveal"><div class="res-num" data-pt="+278%" data-en="+278%">+278%</div><div class="res-lab" data-pt="ROI no 1º mês" data-en="ROI in month 1">ROI no 1º mês</div><p class="res-desc" data-pt="Retorno sobre a verba de mídia contando só a 1ª mensalidade dos alunos captados (box fitness, 7 ativações)." data-en="Return on ad spend counting only the first monthly fee of the students acquired (fitness box, 7 campaigns).">Retorno sobre a verba de mídia contando só a 1ª mensalidade dos alunos captados (box fitness, 7 ativações).</p></div><div class="res-stat reveal"><div class="res-num" data-pt="R$0,89" data-en="R$0.89">R$0,89</div><div class="res-lab" data-pt="CPC médio" data-en="Average CPC">CPC médio</div><p class="res-desc" data-pt="Custo por clique médio em mais de 1.800 cliques, entre Meta Ads e Google Ads, no mercado fitness de São Paulo." data-en="Average cost per click across 1,800+ clicks on Meta Ads and Google Ads in the São Paulo fitness market.">Custo por clique médio em mais de 1.800 cliques, entre Meta Ads e Google Ads, no mercado fitness de São Paulo.</p></div><div class="res-stat reveal"><div class="res-num" data-pt="+259%" data-en="+259%">+259%</div><div class="res-lab" data-pt="meta de cliques superada" data-en="click goal exceeded">meta de cliques superada</div><p class="res-desc" data-pt="Nas duas primeiras campanhas do box, as metas de cliques foram superadas em +100% e +259%." data-en="In the box’s first two campaigns, click goals were exceeded by +100% and +259%.">Nas duas primeiras campanhas do box, as metas de cliques foram superadas em +100% e +259%.</p></div><div class="res-stat reveal"><div class="res-num" data-pt="×72" data-en="×72">×72</div><div class="res-lab" data-pt="CTR no remarketing" data-en="Remarketing CTR">CTR no remarketing</div><p class="res-desc" data-pt="De 0,11% (público aberto) para 7,62% (quem já conhecia a marca), com CPC 49% menor, em campanha de saúde capilar." data-en="From 0.11% (open audience) to 7.62% (people who already knew the brand), with CPC 49% lower, in a hair health campaign.">De 0,11% (público aberto) para 7,62% (quem já conhecia a marca), com CPC 49% menor, em campanha de saúde capilar.</p></div><div class="res-stat reveal"><div class="res-num" data-pt="71%" data-en="71%">71%</div><div class="res-lab" data-pt="dos cliques com 56% da verba" data-en="of clicks with 56% of budget">dos cliques com 56% da verba</div><p class="res-desc" data-pt="Na clínica, o remarketing gerou 71% dos cliques usando 56% do investimento: verba alocada onde o resultado apareceu." data-en="At the clinic, remarketing drove 71% of clicks using 56% of the investment: budget placed where results showed up.">Na clínica, o remarketing gerou 71% dos cliques usando 56% do investimento: verba alocada onde o resultado apareceu.</p></div><div class="res-stat reveal"><div class="res-num" data-pt="56%" data-en="56%">56%</div><div class="res-lab" data-pt="dos cliques em 1 criativo" data-en="of clicks from 1 creative">dos cliques em 1 criativo</div><p class="res-desc" data-pt="Um carrossel que mostrava como funciona a avaliação respondeu por mais da metade dos cliques da campanha." data-en="A carousel showing how the assessment works drove over half of the campaign’s clicks.">Um carrossel que mostrava como funciona a avaliação respondeu por mais da metade dos cliques da campanha.</p></div></div>
-  <div class="res-cases"><article class="res-case reveal"><div class="res-case-tag" data-pt="Box de CrossFit · São Paulo" data-en="CrossFit box · São Paulo">Box de CrossFit · São Paulo</div><h3 class="res-case-title" data-pt="7 ativações em 15 meses · Meta Ads e Google Ads" data-en="7 campaigns over 15 months · Meta Ads and Google Ads">7 ativações em 15 meses · Meta Ads e Google Ads</h3><div class="res-row"><span class="res-row-l" data-pt="Desafio" data-en="Challenge">Desafio</span><p data-pt="Captar alunos com verba baixa, em uma região específica da cidade." data-en="Attract students on a low budget, in a specific area of the city.">Captar alunos com verba baixa, em uma região específica da cidade.</p></div><div class="res-row"><span class="res-row-l" data-pt="O que fiz" data-en="What I did">O que fiz</span><p data-pt="Campanhas sequenciais de awareness, tráfego e conversão, com geolocalização (raio de 5 km), listas de clientes e remarketing; criativos refinados a cada ciclo." data-en="Sequential awareness, traffic and conversion campaigns with geotargeting (5 km radius), customer lists and remarketing; creatives refined each cycle.">Campanhas sequenciais de awareness, tráfego e conversão, com geolocalização (raio de 5 km), listas de clientes e remarketing; criativos refinados a cada ciclo.</p></div><div class="res-row"><span class="res-row-l" data-pt="Resultado" data-en="Result">Resultado</span><p data-pt="ROI de +278% no 1º mês, CPC médio de R$0,89 e campanhas de tráfego com 88% dos cliques. Público feminino com CTR 62% maior." data-en="+278% ROI in month 1, R$0.89 average CPC and traffic campaigns driving 88% of clicks. Women showed a 62% higher CTR.">ROI de +278% no 1º mês, CPC médio de R$0,89 e campanhas de tráfego com 88% dos cliques. Público feminino com CTR 62% maior.</p></div></article><article class="res-case reveal"><div class="res-case-tag" data-pt="Clínica de tricologia · São Paulo" data-en="Trichology clinic · São Paulo">Clínica de tricologia · São Paulo</div><h3 class="res-case-title" data-pt="Funil Brand → Traffic · Meta Ads" data-en="Brand → Traffic funnel · Meta Ads">Funil Brand → Traffic · Meta Ads</h3><div class="res-row"><span class="res-row-l" data-pt="Desafio" data-en="Challenge">Desafio</span><p data-pt="Apresentar a clínica a quem não a conhecia e levar essas pessoas ao contato." data-en="Introduce the clinic to people who didn’t know it and lead them to get in touch.">Apresentar a clínica a quem não a conhecia e levar essas pessoas ao contato.</p></div><div class="res-row"><span class="res-row-l" data-pt="O que fiz" data-en="What I did">O que fiz</span><p data-pt="Etapa Brand para formar a base de audiência, seguida de remarketing com carrossel de avaliação. Testes de criativos e de textos, com leitura por idade e gênero." data-en="A Brand stage to build the audience, followed by remarketing with an assessment carousel. Creative and copy tests, read by age and gender.">Etapa Brand para formar a base de audiência, seguida de remarketing com carrossel de avaliação. Testes de criativos e de textos, com leitura por idade e gênero.</p></div><div class="res-row"><span class="res-row-l" data-pt="Resultado" data-en="Result">Resultado</span><p data-pt="CTR 72× maior no remarketing e CPC 49% menor. Identifiquei a saturação do público pequeno e recomendei reabastecê-lo com uma nova etapa Brand." data-en="72× higher CTR in remarketing and 49% lower CPC. I spotted saturation of the small audience and recommended refilling it with a new Brand stage.">CTR 72× maior no remarketing e CPC 49% menor. Identifiquei a saturação do público pequeno e recomendei reabastecê-lo com uma nova etapa Brand.</p></div></article></div>
-  <p class="res-foot reveal" data-pt="Dados agregados e anonimizados de relatórios de campanha. Os resultados variam conforme mercado, verba e período." data-en="Aggregated, anonymized data from campaign reports. Results vary by market, budget and period.">Dados agregados e anonimizados de relatórios de campanha. Os resultados variam conforme mercado, verba e período.</p>
+  <div class="board reveal" id="board">
+    <div class="board-head"><span class="board-title" data-pt="RESULTADOS" data-en="RESULTS">RESULTADOS</span><span class="board-live"><i class="board-dot"></i><span data-pt="ATUALIZADO · DESDE JUL/2025" data-en="UPDATED · SINCE JUL/2025">ATUALIZADO · DESDE JUL/2025</span></span></div>
+    <div class="board-tabs" id="boardTabs" role="tablist"></div>
+    <div class="board-rows" id="boardRows" role="list"></div>
+    <div class="board-more" id="boardMore" hidden><div class="rchart" id="rchart">
+    <div class="rchart-tabs" role="tablist" aria-label="Gráficos de resultados">
+      <button type="button" role="tab" class="rchart-tab active" data-k="0" aria-selected="true" data-pt="CTR" data-en="CTR">CTR</button>
+      <button type="button" role="tab" class="rchart-tab" data-k="1" aria-selected="false" data-pt="CPC" data-en="CPC">CPC</button>
+      <button type="button" role="tab" class="rchart-tab" data-k="2" aria-selected="false" data-pt="Verba × cliques" data-en="Budget × clicks">Verba × cliques</button>
+    </div>
+    <p class="rchart-title" id="rchartTitle"></p>
+    <div class="rchart-plot" id="rchartPlot" role="img" aria-live="polite"></div>
+    <p class="rchart-read" id="rchartRead"></p>
+    <p class="rchart-src" data-pt="Fonte: relatório de campanha (Meta Ads). Passe o mouse ou toque nas barras." data-en="Source: campaign report (Meta Ads). Hover or tap the bars.">Fonte: relatório de campanha (Meta Ads). Passe o mouse ou toque nas barras.</p>
+  </div></div>
+    <button type="button" class="board-toggle" id="boardToggle" aria-expanded="false" aria-controls="boardMore"><span class="tg-open" data-pt="VER GRÁFICOS +" data-en="VIEW CHARTS +">VER GRÁFICOS +</span><span class="tg-close" data-pt="OCULTAR GRÁFICOS −" data-en="HIDE CHARTS −">OCULTAR GRÁFICOS −</span></button>
+    <p class="board-note" data-pt="Acumulado de relatórios de campanha. Dados agregados e anonimizados, com clientes preservados. Os resultados variam conforme mercado, verba e período." data-en="Cumulative from campaign reports. Aggregated, anonymized data, with client identities protected. Results vary by market, budget and period.">Acumulado de relatórios de campanha. Dados agregados e anonimizados, com clientes preservados. Os resultados variam conforme mercado, verba e período.</p>
+  </div>
+  <div class="res-cases"><article class="res-case reveal"><div class="res-case-tag" data-pt="Setor fitness" data-en="Fitness sector">Setor fitness</div><h3 class="res-case-title" data-pt="7 ativações · Meta Ads e Google Ads" data-en="7 campaigns · Meta Ads and Google Ads">7 ativações · Meta Ads e Google Ads</h3><div class="res-row"><span class="res-row-l" data-pt="Desafio" data-en="Challenge">Desafio</span><p data-pt="Captar novos clientes com verba baixa, em uma região específica da cidade." data-en="Attract new customers on a low budget, in a specific area of the city.">Captar novos clientes com verba baixa, em uma região específica da cidade.</p></div><div class="res-row"><span class="res-row-l" data-pt="O que fiz" data-en="What I did">O que fiz</span><p data-pt="Campanhas sequenciais de awareness, tráfego e conversão, com geolocalização (raio de 5 km), listas de clientes e remarketing; criativos refinados a cada ciclo." data-en="Sequential awareness, traffic and conversion campaigns with geotargeting (5 km radius), customer lists and remarketing; creatives refined each cycle.">Campanhas sequenciais de awareness, tráfego e conversão, com geolocalização (raio de 5 km), listas de clientes e remarketing; criativos refinados a cada ciclo.</p></div><div class="res-row"><span class="res-row-l" data-pt="Resultado" data-en="Result">Resultado</span><p data-pt="CPC médio de R$0,89 e campanhas de tráfego respondendo por 88% dos cliques. Público feminino com CTR 62% maior." data-en="R$0.89 average CPC and traffic campaigns driving 88% of clicks. Women showed a 62% higher CTR.">CPC médio de R$0,89 e campanhas de tráfego respondendo por 88% dos cliques. Público feminino com CTR 62% maior.</p></div></article><article class="res-case reveal"><div class="res-case-tag" data-pt="Setor de saúde e beleza" data-en="Health and beauty sector">Setor de saúde e beleza</div><h3 class="res-case-title" data-pt="Funil Brand → Traffic · Meta Ads" data-en="Brand → Traffic funnel · Meta Ads">Funil Brand → Traffic · Meta Ads</h3><div class="res-row"><span class="res-row-l" data-pt="Desafio" data-en="Challenge">Desafio</span><p data-pt="Apresentar a marca a quem não a conhecia e levar essas pessoas ao contato." data-en="Introduce the brand to people who didn’t know it and lead them to get in touch.">Apresentar a marca a quem não a conhecia e levar essas pessoas ao contato.</p></div><div class="res-row"><span class="res-row-l" data-pt="O que fiz" data-en="What I did">O que fiz</span><p data-pt="Etapa Brand para formar a base de audiência, seguida de remarketing com carrossel explicativo. Testes de criativos e de textos, com leitura por idade e gênero." data-en="A Brand stage to build the audience, followed by remarketing with an explainer carousel. Creative and copy tests, read by age and gender.">Etapa Brand para formar a base de audiência, seguida de remarketing com carrossel explicativo. Testes de criativos e de textos, com leitura por idade e gênero.</p></div><div class="res-row"><span class="res-row-l" data-pt="Resultado" data-en="Result">Resultado</span><p data-pt="CTR 72× maior no remarketing e CPC 49% menor. Identifiquei a saturação do público pequeno e recomendei reabastecê-lo com uma nova etapa Brand." data-en="72× higher CTR in remarketing and 49% lower CPC. I spotted saturation of the small audience and recommended refilling it with a new Brand stage.">CTR 72× maior no remarketing e CPC 49% menor. Identifiquei a saturação do público pequeno e recomendei reabastecê-lo com uma nova etapa Brand.</p></div></article></div>
+  
 </section>
 
 <!-- PLATAFORMAS & FERRAMENTAS -->
@@ -1304,17 +1396,24 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
     </a><a href="https://www.instagram.com/mfp.intelligence/" target="_blank" rel="noopener" class="social" title="Instagram">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-    </a><a href="https://wa.me/55" target="_blank" rel="noopener" class="social" title="WhatsApp">
-      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
     </a></div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <img alt="Maria Fernanda Pereira — Marketing Intelligence Analyst" src="assets/img/brand/logo-mfp.jpg"/>
-  <p data-pt="© 2026 Maria Fernanda Pereira. Todos os direitos reservados." data-en="© 2026 Maria Fernanda Pereira. All rights reserved.">© 2026 Maria Fernanda Pereira. Todos os direitos reservados.</p>
-  <p>MARKETING &amp; DATA</p>
-  <a class="foot-link" href="#privacidade" data-open-modal="modal-privacidade" data-pt="Política de Privacidade" data-en="Privacy Policy">Política de Privacidade</a>
+  <div class="foot-top">
+    <img alt="Maria Fernanda Pereira — Marketing Intelligence" src="assets/img/brand/logo-mfp.jpg"/>
+    <ul class="foot-contact">
+      <li><span class="foot-k" data-pt="E-mail" data-en="Email">E-mail</span><a href="mailto:contact@mariafernandapereira.com">contact@mariafernandapereira.com</a></li>
+      <li><span class="foot-k">Instagram</span><a href="https://www.instagram.com/mfp.intelligence/" target="_blank" rel="noopener">@mfp.intelligence</a></li>
+      <li><span class="foot-k">WhatsApp</span><span class="foot-soon" data-pt="em breve" data-en="coming soon">em breve</span></li>
+    </ul>
+  </div>
+  <div class="foot-bottom">
+    <p data-pt="© 2026 Maria Fernanda Pereira. Todos os direitos reservados." data-en="© 2026 Maria Fernanda Pereira. All rights reserved.">© 2026 Maria Fernanda Pereira. Todos os direitos reservados.</p>
+    <p>MARKETING &amp; DATA</p>
+    <a class="foot-link" href="#privacidade" data-open-modal="modal-privacidade" data-pt="Política de Privacidade" data-en="Privacy Policy">Política de Privacidade</a>
+  </div>
 </footer>
 
   <div class="modal-overlay" id="modal-privacidade" role="dialog" aria-modal="true" aria-label="Política de Privacidade">
@@ -1456,6 +1555,113 @@ function setLang(lang){
     var x=o.querySelector('.modal-close'); if(x) x.addEventListener('click',function(){ closeM(o); });
   });
   document.addEventListener('keydown',function(ev){ if(ev.key==='Escape') document.querySelectorAll('.modal-overlay.open').forEach(closeM); });
+})();
+
+
+// ==================== PAINEL DE RESULTADOS + GRÁFICO ====================
+(function(){
+  var rows=[
+   {g:['PORTFÓLIO','PORTFOLIO']},
+   {l:['CLIENTES ATENDIDOS','CLIENTS SERVED'],v:['5','5']},
+   {l:['SITES CRIADOS DO ZERO','WEBSITES BUILT FROM SCRATCH'],v:['3','3']},
+   {l:['LOGOS CRIADOS','LOGOS DESIGNED'],v:['4','4']},
+   {l:['AGENTES DE IA PARA CONTEÚDO','AI CONTENT AGENTS'],v:['3','3']},
+   {l:['DASHBOARDS PARA CLIENTES','CLIENT DASHBOARDS'],v:['2','2']},
+   {g:['MÍDIA E PERFORMANCE','MEDIA & PERFORMANCE']},
+   {l:['VISUALIZAÇÕES','VIEWS'],v:['+300 MIL','+300K']},
+   {l:['CLIQUES GERADOS','CLICKS GENERATED'],v:['+2.000','+2,000']},
+   {l:['CPC MÉDIO','AVERAGE CPC'],v:['R$0,89','R$0.89']},
+   {l:['ATIVAÇÕES CONDUZIDAS','CAMPAIGNS RUN'],v:['8','8']},
+   {g:['OTIMIZAÇÃO','OPTIMIZATION']},
+   {l:['CTR NO REMARKETING','REMARKETING CTR'],v:['×72','×72'],n:['De 0,11% (público aberto) para 7,62% (quem já conhecia a marca)','From 0.11% (open audience) to 7.62% (people who already knew the brand)']},
+   {l:['CPC NO REMARKETING','REMARKETING CPC'],v:['-49%','-49%'],n:['De R$1,25 para R$0,64 por clique','From R$1.25 to R$0.64 per click']},
+   {l:['DOS CLIQUES COM 56% DA VERBA','OF CLICKS WITH 56% OF BUDGET'],v:['71%','71%'],n:['O remarketing rendeu mais onde a verba foi alocada','Remarketing paid off where the budget was placed']},
+   {l:['DOS CLIQUES EM 1 CRIATIVO','OF CLICKS FROM 1 CREATIVE'],v:['56%','56%'],n:['Um carrossel que mostrava como funciona a avaliação','A carousel showing how the assessment works']}
+  ];
+  var box=document.getElementById('boardRows'); if(!box) return;
+  var CH='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function lg(){ return document.documentElement.lang==='en'?1:0; }
+  var played=false;
+  function tileClass(ch){ return ch===' '?'flap sp':(/[.,]/.test(ch)?'flap sep':'flap'); }
+  var active=0;
+  function groups(){ return rows.filter(function(r){return r.g;}); }
+  function buildTabs(){
+    var L=lg(),tb=document.getElementById('boardTabs'); if(!tb) return; tb.innerHTML='';
+    groups().forEach(function(g,i){
+      var b=document.createElement('button'); b.type='button'; b.setAttribute('role','tab'); b.className='board-tab'+(i===active?' active':''); b.setAttribute('aria-selected',i===active?'true':'false'); b.textContent=g.g[L];
+      b.addEventListener('click',function(){ if(i===active) return; active=i; buildTabs(); played=false; build(); play(); });
+      tb.appendChild(b);
+    });
+  }
+  function build(){
+    var L=lg(); box.innerHTML=''; var gi=-1;
+    rows.forEach(function(r){
+      if(r.g){ gi++; return; }
+      if(gi!==active) return;
+      var row=document.createElement('div'); row.className='flap-row'; row.setAttribute('role','listitem');
+      var wrap=document.createElement('div'); wrap.className='flap-text';
+      var lab=document.createElement('span'); lab.className='flap-label'; lab.textContent=r.l[L]; wrap.appendChild(lab);
+      if(r.n){ var nt=document.createElement('span'); nt.className='flap-sub'; nt.textContent=r.n[L]; wrap.appendChild(nt); }
+      var val=document.createElement('div'); val.className='flap-val'; val.setAttribute('aria-hidden','true');
+      var sr=document.createElement('span'); sr.className='res-sr'; sr.textContent=r.l[L]+': '+r.v[L]+(r.n?'. '+r.n[L]:'');
+      var txt=r.v[L];
+      for(var i=0;i<txt.length;i++){ var t=document.createElement('span'); t.className=tileClass(txt[i]); t.setAttribute('data-f',txt[i]); t.textContent=(played||reduce)?txt[i]:(txt[i]===' '||/[.,]/.test(txt[i])?txt[i]:''); val.appendChild(t); }
+      row.appendChild(wrap); row.appendChild(val); row.appendChild(sr); box.appendChild(row);
+    });
+  }
+  function play(){
+    if(played) return; played=true;
+    if(reduce){ box.querySelectorAll('.flap').forEach(function(t){ t.textContent=t.getAttribute('data-f'); }); return; }
+    var tiles=[].slice.call(box.querySelectorAll('.flap:not(.sep):not(.sp)')); 
+    tiles.forEach(function(t,i){
+      var fin=t.getAttribute('data-f'),n=0,total=8+(i%6)*2,delay=i*45;
+      setTimeout(function(){
+        var iv=setInterval(function(){
+          n++; t.classList.remove('flip'); void t.offsetWidth; t.classList.add('flip');
+          if(n>=total){ t.textContent=fin; clearInterval(iv); }
+          else { if(/[0-9]/.test(fin)) t.textContent=String(Math.floor(Math.random()*10)); else if(/[A-Z]/.test(fin)) t.textContent=CH.charAt(Math.floor(Math.random()*26)); else t.textContent=fin; }
+        },70);
+      },delay);
+    });
+  }
+  buildTabs(); build();
+  var bd=document.getElementById('board');
+  if('IntersectionObserver' in window){ var o=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ play(); o.disconnect(); } }); },{threshold:.35}); o.observe(bd); } else { play(); }
+
+  /* ---- gráfico ---- */
+  var D=[
+   {t:['CTR: quem já conhecia a marca clicou mais','CTR: people who already knew the brand clicked more'],max:8,fmt:function(v,l){return (l?String(v).replace(',','.'):String(v).replace('.',','))+'%';},bars:[{n:['Público aberto','Open audience'],v:0.11,alt:1},{n:['Remarketing','Remarketing'],v:7.62}],r:['O remarketing teve CTR 72 vezes maior (7,62% contra 0,11%).','Remarketing CTR was 72 times higher (7.62% vs 0.11%).']},
+   {t:['CPC: remarketing custou quase metade por clique','CPC: remarketing cost almost half per click'],max:1.5,fmt:function(v,l){var x=v.toFixed(2);return 'R$'+(l?x:x.replace('.',','));},bars:[{n:['Público aberto','Open audience'],v:1.25,alt:1},{n:['Remarketing','Remarketing'],v:0.64}],r:['O custo por clique caiu 49%, de R$1,25 para R$0,64.','Cost per click dropped 49%, from R$1.25 to R$0.64.']},
+   {t:['Verba × cliques: onde o investimento rendeu','Budget × clicks: where spend paid off'],max:80,fmt:function(v){return v+'%';},groups:[{n:['Remarketing','Remarketing'],b:[{n:['Verba','Budget'],v:56,alt:1},{n:['Cliques','Clicks'],v:71}]},{n:['Público aberto','Open audience'],b:[{n:['Verba','Budget'],v:44,alt:1},{n:['Cliques','Clicks'],v:29}]}],r:['O remarketing gerou 71% dos cliques usando 56% da verba.','Remarketing drove 71% of clicks using 56% of the budget.']}];
+  var plot=document.getElementById('rchartPlot'),title=document.getElementById('rchartTitle'),read=document.getElementById('rchartRead'),tabs=[].slice.call(document.querySelectorAll('.rchart-tab')),cur=0;
+  if(!plot) return;
+  function mk(b,d,L){
+    var el=document.createElement('button'); el.type='button'; el.className='rbar'+(b.alt?' alt':'');
+    var val=d.fmt(b.v,L); el.setAttribute('aria-label',b.n[L]+': '+val);
+    el.innerHTML='<span class="rbar-val"></span><span class="rbar-fill"></span><span class="rbar-name"></span>';
+    el.querySelector('.rbar-val').textContent=val; el.querySelector('.rbar-name').textContent=b.n[L];
+    var f=el.querySelector('.rbar-fill'); var h=Math.max(b.v/d.max*76,1.5);
+    el.setAttribute('data-h',h);
+    function show(){ plot.querySelectorAll('.rbar').forEach(function(x){x.classList.remove('on');}); el.classList.add('on'); read.textContent=b.n[L]+': '+val+'. '+d.r[L]; }
+    el.addEventListener('mouseenter',show); el.addEventListener('focus',show); el.addEventListener('click',show);
+    return el;
+  }
+  function draw(){
+    var L=lg(),d=D[cur]; title.textContent=d.t[L]; read.textContent=d.r[L]; plot.innerHTML='';
+    plot.setAttribute('aria-label',d.t[L]);
+    if(d.bars){ d.bars.forEach(function(b){ plot.appendChild(mk(b,d,L)); }); }
+    else { d.groups.forEach(function(g){ var gr=document.createElement('div'); gr.className='rbar-g'; g.b.forEach(function(b){ var e=mk(b,d,L); e.setAttribute('aria-label',g.n[L]+' · '+b.n[L]+': '+d.fmt(b.v,L)); gr.appendChild(e); }); var nm=document.createElement('span'); nm.className='rbar-name rbar-gname'; nm.style.cssText='left:50%;top:100%;margin-top:30px;width:160px;margin-left:-80px'; nm.textContent=g.n[L]; gr.appendChild(nm); plot.appendChild(gr); }); plot.style.marginBottom='62px'; }
+    if(d.bars) plot.style.marginBottom='34px';
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ plot.querySelectorAll('.rbar').forEach(function(e){ e.querySelector('.rbar-fill').style.height=e.getAttribute('data-h')+'%'; }); }); });
+  }
+  tabs.forEach(function(t){ t.addEventListener('click',function(){ cur=+t.getAttribute('data-k'); tabs.forEach(function(x){ var on=x===t; x.classList.toggle('active',on); x.setAttribute('aria-selected',on); }); draw(); }); });
+  draw();
+  var tgb=document.getElementById('boardToggle'),more=document.getElementById('boardMore');
+  if(tgb&&more){ tgb.addEventListener('click',function(){ var open=more.hasAttribute('hidden'); if(open){ more.removeAttribute('hidden'); draw(); } else { more.setAttribute('hidden',''); } tgb.setAttribute('aria-expanded',open?'true':'false'); }); }
+  var drawn=false;
+  if('IntersectionObserver' in window){ var o2=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting&&!drawn){ drawn=true; draw(); o2.disconnect(); } }); },{threshold:.3}); o2.observe(document.getElementById('rchart')); }
+  new MutationObserver(function(){ played=true; buildTabs(); build(); draw(); }).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 })();
 
 // ==================== FORMULÁRIO ====================
